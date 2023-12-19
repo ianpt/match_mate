@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <script src="https://cdn.api-futebol.com.br/widgets/v1/apifutebol-tabela.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <title>MatchMate</title>
+
+  <!-- Stylesheets -->
+  <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <!-- JavaScript -->
+  <%= javascript_importmap_tags %>
+
+  <!-- Favicon -->
+  <%= favicon_link_tag asset_path('logo.png') %>
+</head>
+<body id='body'>
+  <%= render "shared/navbar" %>
+  <%= render "shared/flashes" %>
+
+
+  <%= yield %>
+
+  <!-- Include jQuery and Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <!-- Include Flatpickr script -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+<%= render "shared/footer" %>
+
+</body>
+
+</html>
